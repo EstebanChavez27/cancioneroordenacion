@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-1: #faedcd;
+    --color-2: #d4a373;
+    --color-3: #e9edc9;
+    --color-4: #bac595;
+    --color-5: #804a15;
+}
+
+/* ENCABEZADO */
+
+.header {
+    height: 100%;
+}
+
+.fondo {
+    background-image: url(../img/header.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+}
+
+/* TEXTOS */
+
+h1 {
+    color: white;
+    font-family: 'EB Garamond', serif;
+    font-size: 42px;
+    width: auto;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+}
+
+
+h2 {
+    font-family: 'EB Garamond', serif;
+    width: auto;
+}
+
+.subtitle {
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+}
+
+
+.fecha {
+    font-family: 'EB Garamond', serif;
+    width: auto;
+    text-shadow: 3px 3px 4px rgba(0,0,0,0.8);
+    color: white;
+}
+
+
+.frase {
+    font-family: 'EB Garamond', serif;
+    font-size: 30px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* FONDOS DE SECCIONES */
+
+.container-frase {
+    background-color: #E8CB73;
+}
+
+.lugar {
+    background-color: #acdbc1;
+}
+
+.party {
+    background-color: var(--color-1);    
+}
+
+.dresscode {
+    background-color: var(--color-3);
+}
+
+.asistencia {
+    background-color: var(--color-2)
+}
+
+/* BOTON 1 */
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    border-radius: 0;
+   }
+   
+.btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-4);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+.btn:hover::before {
+    transform: translateX(0);
+   }
+
+button {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+}
+
+button::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-4);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+
+button:hover::before {
+    transform: translateX(0);
+}
+
+/* BOTON 2 */
+
+.btn2 {
+    display: inline-block;
+    padding: 0.9rem 1.8rem;
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    border: 2px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: transparent;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+    font-family: inherit;
+    border-radius: 0;
+   }
+   
+.btn2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-5);
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+   }
+   
+.btn2:hover::before {
+    transform: translateX(0);
+   }
+
+/* CANCIONERO */
+
+#acordeon {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .cancion {
+    background-color: #fff;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .titulo-cancion {
+    background-color: var(--color-2);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .letra-cancion {
+    display: none;
+    padding: 10px;
+  }
+
+/* CONTADOR  */
+
+#cuentaRegresiva {
+    margin: 25px;
+}
+
+.simply-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 15px auto ;
+    padding: 10px;
+}
+
+.simply-amount {
+    display: block;
+    font-family: 'EB Garamond', serif;
+    font-size: 36px;
+    width: auto;
+}
+
+.simply-word {
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    width: auto;
+}
+
+/* GALERIA */
+
+#galery col-lg-3 {
+    margin: 0;
+}
+
+#galery img {
+    width: 100%;
+    height: 250px;
+    padding: 15px;
+    object-fit: cover;
+}
+
+#galery img:hover {
+    width: 100%;
+    height: 250px;
+    padding: 0px;
+    box-shadow: 0 0 20px var(--color-5);
+}
+
+/* ICONOS */
+
+.icono {
+    font-size: 80px;
+    /*animation:scale-up-center 0.6s;*/
+}
+
+
+/* FOOTER */
+
+footer {
+    position: relative;
+    bottom: 0;
+    color: white;
+    background-color: black;
+    height: 35px;
+    padding-top: 10px;
+
+}
+
+.footer {
+    margin-bottom: 10px;
+}
+
+/* ANIMACIONES */
+
+.scale-up-center {
+    animation:scale-up-center 0.6s;
+}
+
+@keyframes scale-up-center {
+    0% {transform:scale(.5)
+    } 
+    100% {transform:scale(1)} 
+}
+
+.tracking-in-expand {
+    animation:tracking-in-expand 0.6s linear both
+}
+
+@keyframes tracking-in-expand {
+    0% {letter-spacing:-.2em;opacity:0}
+    40% {opacity:.6}100%{opacity:1}
+}
+
+/* https://xsgames.co/animatiss/ */
